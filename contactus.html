@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us</title>
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.2.1/dist/jquery.min.js"></script>
+    <link rel="stylesheet" href="contactus.css">
+
+</head>
+<body>
+
+<div class="image"></div>
+    <div class="wrapper">
+        <form
+  action="https://formspree.io/f/mjvpqplb"
+  method="POST">
+  <h1>Contact Us</h1>
+  <h6>Please enter your email, as we can reply to your message</h6>
+  <label>
+    Your Name:
+    <input type="text" name="name" id="name">
+  </label>
+  <label>
+    Your Email:
+    <input type="email" name="_replyto" id="email">
+  </label>
+  <label>
+    Message:
+    <textarea name="message" id="message"></textarea>
+  </label>
+  <div class="status"></div>
+  <input type="submit" value="Submit" class="submitbtn">
+</form>
+<a href="main.html">
+    <button class="backbutton">Back to home page</button>
+</a>
+    </div>
+</body>
+</html>

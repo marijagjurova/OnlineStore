@@ -1,0 +1,49 @@
+<link href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+<script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.0/js/bootstrap.min.js"></script>
+<script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
+
+
+<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.13.1/jquery.validate.min.js"></script>
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery.payment/1.2.3/jquery.payment.min.js"></script>
+
+
+<link rel="stylesheet" href="payment.css">
+
+
+<body>
+    <div id="payment-stripe" class="container">
+        <div class="row text-left">
+          <div class="col-sm-12">
+            <div class="form-group">
+              <label for="cc-number" class="control-label">Credit Card Number <small class="text-muted">[<span data-payment="cc-brand"></span>]</small></label>
+              <div class="input-group">
+                <span class="input-group-addon"><i class="fa fa-credit-card"></i></span>                                    
+                <input id="cc-number" type="tel" class="input-lg form-control cc-number" autocomplete="cc-number" placeholder="•••• •••• •••• ••••" data-payment='cc-number' required>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-8">
+            <div class="form-group">
+              <label>Expiration (MM/YYYY)</label>
+              <div class="input-group">
+                <span class="input-group-addon"><i class="fa fa-calendar"></i></span>
+                <input id="cc-exp" type="tel" class="input-lg form-control cc-exp" autocomplete="cc-exp" placeholder="•• / ••••" data-payment='cc-exp' required>
+              </div>
+            </div>
+          </div>        
+          <div class="col-sm-4">
+            <div class="form-group">
+              <label>CVV Code</label>
+              <div class="input-group">
+                <span class="input-group-addon"><i class="fa fa-lock"></i></span>
+                <input id="cc-cvc" type="tel" class="input-lg form-control cc-cvc" autocomplete="off" placeholder="•••" data-payment='cc-cvc' required>
+              </div>
+            </div>
+          </div>
+        </div>
+        <button class="btn btn-primary" type="button" id="validate">Validate</button>
+      </div>
+      <script src="js/payment.js"></script>
+
+</body>

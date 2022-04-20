@@ -1,0 +1,79 @@
+@import url('https://fonts.googleapis.com/css?family=Arvo|Gugi|Lato|Roboto|Sofia&display=swap');
+
+
+@media (max-width: 480px) {
+    body {
+        background-image: url(assets/aboutus/aboutus_img.jpg);
+    }
+}
+
+@media (min-width: 481px) and (max-width: 1024px) {
+    body {
+        background-image: url(assets/aboutus/aboutus_img.jpg);
+    }
+}
+
+@media (min-width: 1025px) {
+    body {
+        background-image: url(assets/aboutus/aboutus_img.jpg);
+   }
+}
+
+body{
+    background-position: center center;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+}
+
+
+.aboutus{
+    margin: 90px;
+    text-align: center;
+}
+
+h1{
+    font-family: sofia;
+    letter-spacing: 1px;
+    color: #45ccb8;
+}
+
+h1:after{
+    content: '';
+    background: white;
+    display: block;
+    width: 100px;
+    height: 3px;
+    margin: 10px auto;
+}
+
+p{
+    text-align: center;
+    text-shadow: turquoise;
+    color: antiquewhite;
+    font-size: 20px;
+}
+
+.icon{
+    font-size: 40px;
+    margin: 20px auto; /*margin from the text above*/
+    margin-top: 120px;
+    padding: 5px;
+    height: 80px;
+    width: 80px;
+    border: 3px solid white;
+    color: turquoise;
+    border-radius: 50%;
+}
+
+.col-md-4:hover{
+    box-shadow: 5px 7px 9px -3px rgb(255, 255, 255, 0.5);
+    
+}
+
+.backbutton{
+margin: auto;
+width: 100px;
+}
+
